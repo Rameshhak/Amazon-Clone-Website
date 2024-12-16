@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In Page</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Outfit", sans-serif;
+}
+body{
+background-color: #ffffff;
+text-align: center;
+min-height: 100vh;
+}
+.logo{
+margin-top: 20px;
+}
+.signin-container{
+max-width: 350px;
+margin-top: 20px;
+margin: auto;
+border: 1px solid #d2d2d2;
+padding: 20px 26px;
+border-radius: 8px;
+text-align: left;
+}
+.signin-title{
+font-size: 28px;
+font-weight: 400;
+}
+.input-lable{
+margin-top: 20px;
+}
+.signin-container input{
+width: 100%;
+height: 32px;
+margin-top: 5px;
+padding: 3px 7px;
+border-radius: 3px;
+border: 1px solid #a0a0a0;
+font-sie: 12px;
+}
+.signin-container input:focus{
+outline: 3px solid #c2f2ff;
+}
+.signin-container button{
+width: 100%;
+height: 32px;
+margin: 15px 0;
+background-color: #ffd814;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+.signin-container button:hover{
+background-color: #ebc712;
+}
+.signin-condition{
+font-size: 12px;
+}
+.signin-container p span{
+color: #0066c0;
+}
+.signin-help{
+font-size: 13px;
+margin: 20px 0;
+}
+.signin-container hr{
+border: none;
+height: 1px;
+bcakground-color: #d2d2d2;
+}
+.signin-container h4{
+margin: 15px 0;
+font-size: 13px;
+}
+.signin-business{
+font-size: 13px;
+}
+.signin-bottom{
+max-width: 350px;
+font-size: 13px;
+color: #737373;
+margin: 20px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+}
+.signin-bottom hr{
+border: none;
+height: 1px;
+background-color: #d4d4d4;
+width: 110px;
+}
+.signin-signup-btn{
+width: 350px;
+height: 30px;
+font-size: 13px;
+background-color: #ffffff;
+border-radius: 5px;
+border: 1px solid #c3c3c3;
+}
+.signin-signup-btn:hover{
+background-color: #f1f1f1;
+}
+footer{
+width: 100%;
+height: auto;
+max-height: 200px;
+margin-top: 20px;
+position: fixed;
+bottom: 0;
+background-color: linear-gradient(to bottom, #f4f4f4,#ffffff);
+border: 2px solid #ededed;
+font-size: 12px;
+}
+.footer-links{
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-bottom: 20px; 
+}
+.footer-links a{
+text-decoration: none;
+color: #0066c0;
+}
+</style>
+</head>
+<body>
+<a href="homepage.html" class="logo"><img src="./assets/amazon_logo_dark.png" width="100px"></a>
+<div class="signin-container">
+<h1 class="signin-title">Sign in</h1>
+<h5 class="input-lable">Email or mobile phone number</h5>
+<input type="text">
+<button>Continue</button>
+<p class="signin-condition">By continuing, you agree to Amazon's <span>Conditons of Use</span> and<span> Privacy Notice.</span></p>
+<p class="signin-help">&#9656 <span> Need help </span></p>
+<hr>
+<h4>Buying for work?</h4>
+<p class="signin-business"><span>Shop on Amazon Business</span></p>
+</div>
+<div class="signin-bottom">
+<hr>
+<p>New to Amazon</p>
+<hr>
+</div>
+<a href="signuppage.html"><button class="signin-signup-btn">Create your Amazon account</button></a>
+<footer> 
+<div class="footer-links">
+<a href="#">Conditions of Use</a>
+<a href="#">Privacy Notice</a>
+<a href="#">Help</a>
+</div>
+<p class="footer-copyright">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+</footer>
+</body>
+</html>

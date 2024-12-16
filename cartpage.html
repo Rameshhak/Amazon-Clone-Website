@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>
+<title>Cart Of Amazon</title>
+<link rel="stylesheet" href="style2.css">
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css<style>
+.cart{
+display: flex;
+gap: 20px;
+margin: 20px;
+}
+.cart-left{
+background-color: white;
+padding: 20px; 
+}
+.cart-left h1{
+font-size: 28px;
+font-weight: 400;
+margin-bottom: 15px;
+}
+.cart-left hr{
+border: none;
+height: 1px;
+background-color: #dadada;
+}
+.product-cart-list{
+display: flex;
+align-items: start;
+gap: 10px;
+padding: 24px 0 12px 12px;
+}
+.product-cart-titleprice{
+display: flex;
+gap: 20px;
+font-size:18px; 
+}
+.product-cart-bestseller{
+font-size: 12px;
+margin-top: 10px;
+}
+.product-cart-bestseller span{
+font-size: 13px;
+background-color: #c45500;
+color: #ffffff;
+padding: 3px 8px;
+}
+.product-cart-stock{
+font-size: 13px;
+color: #007600;
+margin: 4px 0;
+}
+.product-cart-delivery{
+font-size: 15px;
+}
+.product-cart-returns{
+font-size: 15px;
+color: #007185;
+font-weight: 400;
+}
+.product-cart-giftoption{
+color: #494949;
+font-size: 13px;
+magrgin: 3px 0;
+}
+.product-cart-giftoption span{
+color: #007185; 
+}
+.product-cart-specs{
+max-width: 150px;
+display: grid;
+grid-template-columns: auto auto;
+row-gap: 3px;
+font-size: 13px;
+margin: 7px 0;
+}
+.cart-list-action{
+display: flex;
+gap: 12px;
+font-size: 14px;
+color: #007185;
+}
+.cart-list-action hr{
+height: 20px;
+width: 1px;
+background-color: #cfcfcf;
+}
+.cart-list-action select{
+padding: 5px;
+border-radius: 6px;
+background-color: #f3f3f3;
+}
+.cart-list-subtotal{
+text-align: right;
+font-size: 20px;
+margin-top: 10px;
+}
+.cart-right{
+background-color: white;
+padding: 20px;
+max-height: 220px;
+min-height: 220px;
+}
+.cart-free-delivery{
+display: flex;
+font-size: 13px;
+}
+.cart-subtotal{
+margin-top: 20px;
+font-size: 18px;
+font-weight: 500;
+}
+.cart-right-gift{
+margin: 7px 0;
+font-size: 14px;
+}
+.cart-right button{
+width: 100%;
+height: 32px;
+margin: 15px 0;
+background-color: #ffd814;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+.cart-right button: hover{
+background-color: #ebc712;
+}
+.footer-cart{
+margin-top: 50px;
+}
+/* -------------media query-------------- */
+
+@media only screen and (max-width: 900px){
+.cart{
+flex-wrap: wrap;
+}
+}
+@media only screen and (max-width: 900px){
+.product-cart-list{
+padding: 24px 0;
+}
+.product-cart-list img{
+width: 80px;
+}
+.product-cart-titleprice{
+flex-wrap: wrap;
+font-size: 14px;
+}
+.product-cart-delivery{
+font-size: 13px;
+}
+.cart-list-action .action-btn:nth-last-child(1){
+display: none;
+}
+.cart-list-action hr:nth-last-child(2){
+display: none;
+}
+.cart-list-action .action-btn:nth-last-child(3){
+display: none;
+}
+.cart-list-action hr:nth-last-child(4){
+display: none;
+}
+.cart-right{
+min-width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<!--navbar-->
+<nav>
+ <a href="homepage.html"><img src="./assets/amazon_logo.png" width="100"></a>
+  <div class="nav-country">
+<img src="./assets/location_icon.png" height="20" alt="" >
+   <div>
+<p>Deliver to</p>
+<h1>Chennai,TN</h1>
+   </div>
+  </div>
+<div class="nav-search">
+  <div class="nav-search-category">
+ <p>All</p>
+<img src="./assets/dropdown_icon.png" height="12">
+  </div>
+<input type="text" class="nav-search-input" placeholder="Search Amazon">
+<img src="./assets/search_icon.png" class="nav-search-icon">
+</div>
+<div class="nav-language">
+<img src="./assets/us_flag.png" width="25">
+<p>EN</p>
+<img src="./assets/dropdown_icon.png" height="8px">
+</div>
+ <div class="nav-text">
+<p>Hello, <a href="signinpage.html">sign in</a></p>
+<h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px"></h1>
+ </div>
+<div class="nav-text">
+<p>Return</p>
+<h1>& Orders</h1>
+ </div>
+<a href="" class="nav-cart">
+<img src="./assets/cart_icon.png" width="35px">
+<h4>Cart</h4>
+</a>
+</nav>
+<!--navbar bottom-->
+  <div class="nav-bottom">
+<div>
+<img src="./assets/menu_icon.png" width="25">
+<p>All</p>
+</div>
+<p>Today's Deal</p>
+<p>Customer service</p> 
+<p>Gift Cards</p>
+<p>Sell</p>
+</div>
+<!--cart-->
+<div class="cart">
+ <div class="cart-left">
+<h1>Shopping Cart</h1>
+<hr>
+<div class="product-cart-list">
+<img src="./assets/ipad_img.jpg" width="180px">
+<div>
+  <div class="product-cart-titleprice">
+<p>Apple iPad (9th Generation): with A13 Bionic chip, 25.91 cm (10.2″) Retina Display, 64GB, Wi-Fi, 12MP front/8MP Back Camera, Touch ID, All-Day Battery Life – Space Grey</p>
+<p><b>&#8377;24,999</b></p>
+  </div>
+<p class="product-cart-bestseller"><span>#1 Best Seller</span> in Computer Tablets </p>
+<p class="product-cart-stock">In Stock</p>
+<p class="product-cart-delivery">FREE delivery <b>mon, Jan 29 </b>avalaiable at checkout </p>
+<p class="product-cart-returns">FREE Return &#11191</p>
+<p class="product-cart-giftoption">Gift options not available <span>Learn more</span></p>
+
+<div class="product-cart-specs">
+<p><b>Style:</b></p><p>Wifi</p>
+<p><b>Style:</b></p><p>64GB</p>
+<p><b>Style:</b></p><p>Space Gray</p>
+</div>
+<div class="cart-list-action">
+<select>
+<option value="1">Qty: 1</option>
+<option value="2">Qty: 2</option>
+<option value="3">Qty: 3</option>
+<option value="4">Qty: 4</option>
+<option value="5">Qty: 5</option>
+</select>
+<hr>
+<p class="action-btn">Delete</p>
+<hr>
+<p class="action-btn">Save for later</p>
+<hr>
+<p class="action-btn">Compare with similar items</p>
+<hr>
+<p class="action-btn">Share</p>
+</div>
+   </div>
+</div>
+<hr>
+<div class="product-cart-list">
+<img src="./assets/product_img.jpg" width="180px">
+   <div>
+  <div class="product-cart-titleprice">
+<p>BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling Over Ear Headphones with Mic, LED Light, Bass Surround</p>
+<p><b>&#8377;4,667</b></p>
+  </div>
+<p class="product-cart-bestseller"><span>#1 Best Seller</span> in PC Game Headsets </p>
+<p class="product-cart-stock">In Stock</p>
+<p class="product-cart-delivery">FREE delivery <b>mon, Jan 29 </b>avalaiable at checkout </p>
+<p class="product-cart-returns">FREE Return &#11191</p>
+<p class="product-cart-giftoption">Gift options not available <span>Learn more</span></p>
+
+  <div class="product-cart-specs">
+<p><b>Style:</b></p><p>Wifi</p>
+<p><b>Style:</b></p><p>64GB</p>
+<p><b>Style:</b></p><p>Blue</p>
+  </div>
+ <div class="cart-list-action">
+<select>
+<option value="1">Qty: 1</option>
+<option value="2">Qty: 2</option>
+<option value="3">Qty: 3</option>
+<option value="4">Qty: 4</option>
+<option value="5">Qty: 5</option>
+</select>
+<hr>
+<p class="action-btn">Delete</p>
+<hr>
+<p class="action-btn">Save for later</p>
+<hr>
+<p class="action-btn">Compare with similar items</p>
+<hr>
+<p class="action-btn">Share</p>
+ </div>
+   </div>
+</div>
+<hr>
+<div class="cart-list-subtotal">
+Subtotal(2 items): <b>&#8377;29,666</b>
+</div>
+ </div>
+<div class="cart-right">
+<div class="cart-free-delivery">
+<p>&#x2705</p>
+<p>Your order qualifies for FREE Shipping. <b>Choose this option at checkout.</b>See details</p>
+</div>
+<p class="cart-subtotal">Subtotal(2 items): <b>&#8377;29,666</b></p>
+<p class="cart-right-gift"> <input type="checkbox"> This order contains a gift</p>
+<button>Proceed to checkout</button>
+</div>
+</div>
+<!--footer-->
+<footer class="footer-cart">
+<img src="./assets/amazon_logo.png" width="100">
+<p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+</footer>
+</body>
+</html>
